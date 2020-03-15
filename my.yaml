@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: my-ingnx
+   labels:
+    environment : production
+    app : ingnx
+    class : k8s-training
+spec:
+  containers:
+    - name: nginx
+      image: nginx:1.7.9
+      ports:
+        - containerPort: 80
+
